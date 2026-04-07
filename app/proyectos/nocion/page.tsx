@@ -11,7 +11,7 @@ export default function NocionPage() {
     "/projects/nocion3.png",
     "/projects/nocion4.png"
   ]
-  const [modalImg, setModalImg] = useState(null)
+  const [modalImg, setModalImg] = useState<string | null>(null);
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-12 pt-32">
