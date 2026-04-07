@@ -32,7 +32,7 @@ const projects = [
   {
     id: 5,
     name: 'Waike',
-    img: '/projects/waike-1.png',
+    img: '/projects/waike.jpg',
     desc: 'Aplicación móvil de música. Descubre, escucha y crea tus playlists favoritas con una interfaz inmersiva.',
     slug: 'waike'
   }

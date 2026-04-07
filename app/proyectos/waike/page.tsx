@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { FaReact, FaMobileAlt, FaMusic } from "react-icons/fa"
 
 export default function WaikePage() {
-  const featured = "/projects/waike-1.png"
+  const featured = "/projects/waike.jpg"
   const gallery = [
-    "/projects/waike-1.png",
-    "/projects/waike-2.png",
-    "/projects/waike-3.png",
-    "/projects/waike-4.png"
+    "/projects/waike-1.jpg",
+    "/projects/waike-2.jpg",
+    "/projects/waike-3.jpg",
+    "/projects/waike-4.jpg"
   ]
   const [modalImg, setModalImg] = useState<string | null>(null)
 
@@ -107,6 +107,18 @@ export default function WaikePage() {
           <span title="React Native / Expo"><FaMobileAlt /></span>
           <span title="React"><FaReact /></span>
         </div>
+      </div>
+
+      {/* Botón de código fuente */}
+      <div className="flex gap-4 mt-8">
+        <a
+          href="https://github.com/aymaravilez70/Waike"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-primary text-black font-bold px-8 py-3 rounded-lg hover:bg-primary-dark transition"
+        >
+          Ver Código en GitHub
+        </a>
       </div>
     </section>
   )
