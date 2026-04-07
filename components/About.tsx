@@ -14,13 +14,14 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           {/* Foto izquierda ARRIBA */}
           <div className="flex justify-center order-2 md:order-1">
-            <div className="relative w-64 h-96 md:w-72 md:h-96 rounded-2xl overflow-hidden border-4 border-primary shadow-2xl sticky top-24 isolate">
-              <Image
+            <div className="relative w-64 h-96 md:w-72 md:h-96 rounded-2xl overflow-hidden border-4 border-primary shadow-2xl sticky top-24 isolate bg-gray-800 flex items-center justify-center">
+              <span className="text-gray-500 font-bold">Tu nueva foto aquí</span>
+              {/* <Image
                 src="/images/profile.jpg"
                 alt="Aymar Aviles Ronquillo"
                 fill
                 className="object-cover"
-              />
+              /> */}
             </div>
           </div>
 
