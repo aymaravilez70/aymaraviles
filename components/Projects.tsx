@@ -21,6 +21,13 @@ const projects = [
     img: '/projects/project3.png',
     desc: 'Sistema web académico para la organización de hábitos, gestión de tareas y recordatorios con panel de métricas, reportes y calendario interactivo. Creado con PHP, JavaScript y Bootstrap.',
     slug: 'nocion'
+  },
+  {
+    id: 4,
+    name: 'HPO SHOP',
+    img: '/projects/hposhop.png',
+    desc: 'Demo de un catálogo interactivo con diseño moderno y vibrante. Explora productos de manera sencilla en esta aplicación.',
+    slug: 'hpo-shop'
   }
 ]
 
