@@ -122,12 +122,12 @@ export default function NocionPage() {
 
       <div className="flex gap-4 mt-8">
         <a
-          href="https://github.com/aymaravilez70/NoCion"
+          href="https://aymaravilez70.github.io/nocionn/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-primary text-black font-bold px-8 py-3 rounded-lg hover:bg-primary-dark transition"
         >
-          Ver Código
+          Ver Página
         </a>
       </div>
     </section>
