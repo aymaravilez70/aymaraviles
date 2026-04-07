@@ -28,6 +28,13 @@ const projects = [
     img: '/projects/hposhop.png',
     desc: 'Demo de un catálogo interactivo con diseño moderno y vibrante. Explora productos de manera sencilla en esta aplicación.',
     slug: 'hpo-shop'
+  },
+  {
+    id: 5,
+    name: 'Waike',
+    img: '/projects/waike-1.png',
+    desc: 'Aplicación móvil de música. Descubre, escucha y crea tus playlists favoritas con una interfaz inmersiva.',
+    slug: 'waike'
   }
 ]
 
