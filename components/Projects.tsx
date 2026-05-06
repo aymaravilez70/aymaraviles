@@ -2,6 +2,13 @@ import Image from 'next/image'
 
 const projects = [
   {
+    id: 6,
+    name: 'EcoSort AI',
+    img: '/projects/ecosort-ai.png',
+    desc: 'Sistema de clasificacion automatizada de productos excedentes con IA. Usa n8n para automatizar el flujo: webhook → clasificacion IA → notificacion. Stack: FastAPI, n8n, JavaScript, Python.',
+    slug: 'ecosort-ai'
+  },
+  {
     id: 1,
     name: 'WaspBot',
     img: '/projects/project1.jpg',
