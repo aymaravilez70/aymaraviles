@@ -42,6 +42,13 @@ const projects = [
     img: '/projects/waike.jpg',
     desc: 'Aplicación móvil de música. Descubre, escucha y crea tus playlists favoritas con una interfaz inmersiva.',
     slug: 'waike'
+  },
+  {
+    id: 7,
+    name: 'Yale App',
+    img: '/projects/yale.png',
+    desc: 'Sistema multiplataforma (Web, Móvil y Servidor) para la reproducción sincronizada de videos y música en tiempo real. Usa WebSockets para conectar salas interactivas. Stack: React, React Native (Expo) y Node.js.',
+    slug: 'yale'
   }
 ]
 
