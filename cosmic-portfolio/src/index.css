@@ -1,0 +1,170 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+
+  --color-cosmic-void: #0a0e17;
+  --color-cosmic-deep: #111827;
+  --color-accent: #6b8cae;
+  --color-accent-soft: #8899b0;
+  --color-accent-warm: #8b7355;
+  --color-muted: #4a5568;
+  --color-surface: #1a2030;
+
+  /* Legacy aliases — tonos apagados */
+  --color-neon-pink: #8b7fad;
+  --color-neon-cyan: #6b8cae;
+  --color-neon-purple: #5b4b7a;
+  --color-neon-orange: #8b7355;
+  --color-neon-magenta: #7a6b8a;
+  --color-neon-blue: #3d5a80;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background: var(--color-cosmic-void);
+  color: #e2e8f0;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::selection {
+  background: rgba(107, 140, 174, 0.35);
+  color: #fff;
+}
+
+a,
+button {
+  cursor: none;
+}
+
+@utility text-gradient-cosmic {
+  background: linear-gradient(
+    135deg,
+    #94a3b8 0%,
+    #cbd5e1 40%,
+    #8899b0 70%,
+    #6b8cae 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility glow-text {
+  text-shadow: 0 0 30px rgba(107, 140, 174, 0.25);
+}
+
+@utility glass-panel {
+  background: rgba(17, 24, 39, 0.65);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(107, 140, 174, 0.12);
+}
+
+@utility neon-border {
+  border: 1px solid rgba(107, 140, 174, 0.15);
+  box-shadow: inset 0 0 30px rgba(17, 24, 39, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cosmic-void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 999px;
+}
+
+.hero-warp-line {
+  will-change: transform;
+}
+
+.hero-name-clip {
+  width: 0;
+}
+
+.hero-rocket,
+.hero-name-spark,
+.rocket-trail {
+  opacity: 0;
+}
+
+.mission-card:hover .mission-scan {
+  animation: mission-scan 1.8s ease-in-out infinite;
+}
+
+.rocket-trail {
+  width: 5rem;
+  height: 0.35rem;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(107, 140, 174, 0.15) 30%,
+    rgba(136, 153, 176, 0.75) 70%,
+    rgba(203, 213, 225, 0.95) 100%
+  );
+  border-radius: 999px;
+  filter: blur(1px);
+}
+
+@media (min-width: 768px) {
+  .rocket-trail {
+    width: 7rem;
+    height: 0.45rem;
+  }
+}
+
+.rocket-flame {
+  width: 1.25rem;
+  height: 0.65rem;
+  background: radial-gradient(
+    ellipse at 100% 50%,
+    rgba(251, 191, 36, 0.95) 0%,
+    rgba(107, 140, 174, 0.7) 45%,
+    transparent 100%
+  );
+  border-radius: 999px;
+  filter: blur(2px);
+  transform-origin: right center;
+}
+
+@media (min-width: 768px) {
+  .rocket-flame {
+    width: 1.5rem;
+    height: 0.8rem;
+  }
+}
+
+@keyframes mission-scan {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}

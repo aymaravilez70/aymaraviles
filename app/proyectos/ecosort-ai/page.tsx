@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { FaPython, FaJsSquare, FaRobot } from "react-icons/fa"
+import Link from 'next/link'
+import { FaPython, FaJsSquare, FaRobot, FaArrowLeft } from "react-icons/fa"
 import { SiN8N, SiFastapi } from "react-icons/si"
 
 export default function EcoSortAIPage() {
@@ -14,11 +15,18 @@ export default function EcoSortAIPage() {
   const [modalImg, setModalImg] = useState<string | null>(null);
 
   return (
-    <section className="max-w-4xl mx-auto px-4 py-12 pt-32">
-    <h1 className="text-4xl font-bold text-primary mb-1 flex items-center gap-2">
-      <FaRobot className="text-5xl text-primary" />
-      EcoSort AI
-    </h1>   
+    <section className="max-w-4xl mx-auto px-4 py-12 pt-32 font-sans">
+      <Link
+        href="/#proyectos"
+        className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-mono text-sm mb-6 bg-emerald-950/60 border border-emerald-500/40 px-4 py-2 rounded-xl transition"
+      >
+        <FaArrowLeft />
+        <span>Volver a Proyectos</span>
+      </Link>
+      <h1 className="text-4xl font-extrabold text-white mb-2 flex items-center gap-3">
+        <FaRobot className="text-5xl text-emerald-400 animate-pulse" />
+        EcoSort AI
+      </h1>   
    <p className="text-gray-300 mb-4 text-lg">
         Sistema de clasificacion automatizada de productos excedentes con <span className="text-primary font-semibold">IA</span>. 
         Determina si un producto debe ser <span className="font-bold text-green-400">DONADO</span>, <span className="font-bold text-blue-400">RECICLADO</span> o <span className="font-bold text-yellow-400">LIQUIDADO</span>, 
